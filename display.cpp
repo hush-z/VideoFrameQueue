@@ -24,12 +24,12 @@ int main(int argc, char** argv)
 		numFrames++;	
 	}
 	cout << "numFrames: " << numFrames << endl;
-	//for(;;)
-	//{
-	//	Mat frame;
-	//	cap >> frame; // get a new frame from camera        
-	//	imshow("output", frame);
-	//	if(waitKey(100) >= 0) break;
-	//}
+	for(;;)
+	{
+		Mat frame;
+		cap >> frame; // get a new frame from camera        
+		imshow("output", frame);
+		if(waitKey(100) >= 0) break;
+	}
 	return 0;
 }
